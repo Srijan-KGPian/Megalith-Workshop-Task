@@ -29,8 +29,7 @@
                         <i class="fa-solid fa-circle-user"></i>
                     </a>
                     <ul class="dropdown-menu text-small shadow" id="header_dropdown"> 
-                        <li><a class="dropdown-item feature-btn" href="#">New project...</a></li>
-                        <li><a class="dropdown-item feature-btn" href="#">Settings</a></li>
+                        <li><a class="dropdown-item feature-btn" href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">>About</a></li>
                         <li><a class="dropdown-item feature-btn" href="#">Profile</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#" id="logoutBtn">Log out</a></li>
@@ -128,6 +127,75 @@
                     class="btn-close btn-close-white me-2 m-auto"
                     data-bs-dismiss="toast">
             </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="modal fade"
+     id="aboutModal"
+     tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content bg-dark text-light border border-danger">
+
+            <div class="modal-header">
+
+                <h1 class="modal-title fs-4">
+                    About Megalith Notes
+                </h1>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <p>
+                    Megalith Notes is a responsive notes web application
+                    built using HTML, CSS, Bootstrap, and JavaScript.
+                </p>
+
+                <hr>
+
+                <h5>Features</h5>
+
+                <ul>
+
+                    <li>User Login & Registration</li>
+
+                    <li>User-specific Notes Storage</li>
+
+                    <li>Add / Edit / Delete / Maximise Notes</li>
+
+                    <li>Live Search Functionality</li>
+
+                    <li>Responsive Design</li>
+
+                </ul>
+
+                <hr>
+
+                <h5>Built With</h5>
+
+                <p>
+                    HTML5, CSS3, JavaScript, Bootstrap 5,
+                    Local Storage API, Font Awesome
+                </p>
+
+                <hr>
+
+                <p class="text-secondary">
+                    Developed by Srijan
+                </p>
+
+            </div>
 
         </div>
 
