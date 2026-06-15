@@ -242,32 +242,32 @@ window.location.href =
 
 // FEATURE NOT AVAILABLE TOAST(for profile and all)
 
-const featureButtons =
-document.querySelectorAll(
-'.feature-btn'
-);
+// const featureButtons =
+// document.querySelectorAll(
+// '.feature-btn'
+// );
 
-const toastElement =
-document.getElementById(
-'featureToast'
-);
+// const toastElement =
+// document.getElementById(
+// 'featureToast'
+// );
 
-const toast =
-new bootstrap.Toast(
-toastElement
-);
+// const toast =
+// new bootstrap.Toast(
+// toastElement
+// );
 
-featureButtons.forEach(
-(button) => {
+// featureButtons.forEach(
+// (button) => {
 
-button.addEventListener(
-'click',
-(e) => {
+// button.addEventListener(
+// 'click',
+// (e) => {
 
-e.preventDefault();
+// e.preventDefault();
 
-toast.show();
+// toast.show();
 
-});
+// });
 
 });
