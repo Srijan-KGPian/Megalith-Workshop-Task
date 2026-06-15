@@ -1,0 +1,322 @@
+body {
+    background-image: url('background.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container {
+    /* height: 75vh; */
+    width: 35vw;
+    background-color: rgba(25, 25, 25, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(3px);
+     border: 2px groove rgb(218,23,23);
+
+    border-radius: 30px;
+
+    box-shadow:
+        10px 10px 8px
+        rgba(229,20,9,.3);
+
+    padding: 30px;
+
+    position: absolute;
+
+    right: 8vw;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.loginh2{
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    background: linear-gradient(to bottom left, #ff0000, #c68ab6);
+    background-clip: text;
+    /* display: inline-block; */
+    width: 100%;
+    color: transparent;
+    /* font-size: larger; */
+    /* padding-bottom: 20%; */
+}
+
+
+
+.form-control{
+    background-color: rgba(255, 54, 54, 0);
+    color: rgba(255, 255, 255, 0.584);
+    
+}
+
+.form-floating label{
+    color: white;
+}
+
+.form-floating:focus-within label {
+    color: rgb(255, 128, 128) !important; /* !important ensures Bootstrap styles don't override it */
+}
+
+.form-floating:focus-within input{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255) !important; /* !important ensures Bootstrap styles don't override it */
+}
+
+/* .name{
+    display: inline;
+} */
+
+/* .name{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+.name h4{
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.name .form-floating{
+    width: 50%;
+} */
+
+
+
+/* Modal glass effect */
+.modal-content{
+    background-color: rgba(25,25,25,0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 2px groove rgb(218,23,23);
+
+    box-shadow:
+        0 0 20px rgba(229,20,9,0.25);
+
+    color: white;
+
+    border-radius: 20px;
+}
+
+
+/* Inputs inside modal */
+.modal .form-control{
+    background-color: transparent;
+    color: white;
+}
+
+
+/* Labels */
+.modal .form-floating label{
+    color: rgb(220,220,220);
+}
+
+
+/* Input focus */
+.modal .form-control:focus{
+    background-color: transparent;
+
+    color: white;
+
+    border-color: rgb(255,120,120);
+
+    box-shadow:
+        0 0 10px rgba(255,0,0,0.3);
+}
+
+
+/* Register link */
+.register_button{
+    text-decoration: none;
+
+    color: rgb(170,170,170);
+
+    transition: 0.3s;
+}
+
+.register_button:hover{
+    color: rgb(255,100,100);
+}
+
+/* input::placeholder {
+  color: #ff5733;
+} */
+
+.register_button{
+    /* margin-top: 200px; */
+    text-decoration: none;
+    font-weight:600;
+    color: rgb(165, 165, 165);
+}
+
+#button{
+    display: block;
+    margin: 20px auto;
+}
+
+p{
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/* ===== REGISTER MODAL ONLY ===== */
+
+.modal-dialog{
+    max-width: 460px;
+}
+
+
+.modal-content{
+    background: rgba(18,18,18,.72);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1.5px solid rgba(255,60,60,.45);
+    border-radius: 24px;
+    box-shadow: 0 0 30px rgba(255,0,0,.15);
+    padding: 8px;
+}
+
+
+
+/* Header */
+
+.modal-header{
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.08);
+
+    padding:
+        24px 28px 16px;
+}
+
+
+.modal-title{
+    width:100%;
+    text-align:center;
+    font-size:2rem;
+    font-weight:600;
+    background: linear-gradient( 135deg,#ff5555, #ff9ab3);
+    background-clip:text;
+    color:transparent;
+}
+
+
+
+/* Body */
+
+.modal-body{
+    padding: 25px 30px 30px;
+}
+
+
+
+/* Inputs */
+
+.modal .form-floating{
+    margin-bottom: 18px;
+}
+
+
+.modal .form-control{
+    height: 58px;
+    border-radius: 14px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.15);
+    color: white;
+    transition: 0.25s;
+}
+
+
+.modal .form-control:focus{
+    background: rgba(255,255,255,.06);
+    color: white;
+    border-color: rgb(255,100,100);
+    box-shadow: 0 0 12px rgba(255,0,0,.18);
+}
+
+
+
+/* Labels */
+
+.modal .form-floating label{
+    color: rgb(200,200,200);
+}
+
+
+
+/* Register button */
+
+.modal .btn-danger{
+    height: 52px;
+    border-radius: 14px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+
+.modal .btn-danger:hover{
+    transform: translateY(-2px);
+}
+
+
+
+/* Close button */
+
+.btn-close{
+    opacity: .8;
+}
+
+
+/* MOBILE responsive */
+
+@media (max-width: 768px){
+
+body{
+    background-color: rgb(4, 4, 4);
+    background-image: url('background_mobile.png');
+    /* background-position: center; */
+    background-size: contain;
+}
+
+.form-container{
+
+    width: 90vw;
+
+    left: 50%;
+
+    right: auto;
+
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    padding: 25px;
+
+}
+
+.loginh2{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+}

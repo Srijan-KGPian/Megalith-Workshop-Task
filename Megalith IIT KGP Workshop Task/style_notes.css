@@ -1,0 +1,245 @@
+body {
+    background-color: rgb(10, 10, 10);
+    background-image: url('background_constrction.png');
+    backdrop-filter: blur(4px);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.body_minus_header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    height: 80px;
+} 
+
+header{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.197), rgba(82, 82, 82, 0.069));
+    backdrop-filter: blur(3px);
+    /* margin: 0 !important; */
+    /* padding: 0 !important; */
+}
+
+.form-control{
+    background-color: rgba(4, 4, 4, 0.296);
+    color: white;
+}
+
+.form-control::placeholder{
+    color: rgb(163, 163, 163);
+}
+
+
+.form-control:focus{
+    background-color: rgba(4, 4, 4, 0.296);
+    border-color: rgb(255, 43, 43);
+    color: white;
+}
+
+.note{
+    height: 370px;
+    width: 370px;
+    background-color: rgba(100, 100, 100, 0.362);
+    border-left: 3px solid red;
+    margin: 20px;
+    border-radius: 10%;
+    box-shadow: 0px 1px 3px rgba(255, 255, 255, 0.4); 
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+ 
+}
+
+.notes_buttons{
+    display: flex;
+    justify-content: right;
+}
+
+.operation_title{
+    min-height: 10vh;
+    width: 100%;
+    /* background-color: green; */
+    border-radius: 50%;
+    padding: 2vh;
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.edit, .delete, .size{
+    margin: 5px;
+}
+
+#edit{
+    color: white;
+}
+
+#delete{
+    color: rgb(255, 255, 255);
+}
+
+#size{
+    color: white;
+}
+
+.edit:hover #edit{
+    color: rgb(109, 162, 30);
+}
+
+.delete:hover #delete{
+    color: red;
+}
+
+.size:hover #size{
+    color: grey;
+}
+
+.edit{
+    color: white;
+   padding: 10px;
+    background-color: rgb(109, 162, 30);
+    border-radius: 50%;
+}
+
+.delete{
+    color: white;
+    padding: 10px;
+    background-color: rgb(202, 0, 0);
+    border-radius: 50%;
+}
+
+.size{
+    color: white;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.edit:hover{
+    background-color: white;
+    color: rgb(109, 162, 30);
+    filter: drop-shadow(0px 5px 4px rgb(219, 218, 218));
+}
+
+.delete:hover{
+    background-color: white;
+    color: rgb(202, 0, 0);
+    filter: drop-shadow(0px 10px 8px rgb(219,218,218));
+}
+
+.size:hover{
+    background-color: white;
+    color: grey;
+    filter: drop-shadow(0px 10px 8px rgb(219,218,218));
+}
+
+.content{
+    display: flex;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    width: 100%;
+    min-height: 280px;
+}
+
+.h1{
+     display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    width: 100%;
+    min-height: 40px;
+    font-size: 1.5rem;
+    font-weight:500;
+}
+
+
+.add_note{
+    min-height: 400px;
+    width: 400px;
+    background-color: rgba(100, 100, 100, 0.362);
+    border: none;
+    border-left: 3px solid red;
+    margin: 20px;
+    border-radius: 10%;
+    box-shadow: 0px 1px 3px rgba(255, 255, 255, 0.4); 
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(175, 175, 175);
+}
+
+textarea::placeholder{
+    color: rgb(193, 193, 193);
+}
+
+.hidden{
+    display: none;
+}
+
+.content, .virtual_textarea_content{
+    width: 100%;
+    height: 200px;
+    overflow-y: auto;
+
+    background: transparent;
+    border: none;
+
+    white-space: pre-wrap;
+}
+
+.virtual_textarea_h1{
+    font-size: 1.5rem;
+    font-weight:500;
+}
+
+
+.h1, .virtual_textarea_h1{
+    flex: 1;
+
+    min-width: 0;
+
+    overflow-y: auto;
+
+    white-space: nowrap;
+}
+
+.hide-note {
+    display: none !important;
+}
+
+#profile{
+    font-size: 35px;
+}
+
+
+@media (max-width: 900px){
+    .body_minus_header{
+        display: flex;
+        justify-content: center;
+    }
+}
